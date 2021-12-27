@@ -47,7 +47,6 @@ function heightOfBinaryTree(root){
     }
     return 1+Math.max(heightOfBinaryTree(root.left),heightOfBinaryTree(root.right));
 }
-
 let tree = new Tree();
 let newNode = new node(5);
 tree.root = newNode;
@@ -59,6 +58,11 @@ newNode.left.right = new node(9);
 // preOrderTraversal(tree.root);
 // postOrderTraversal(tree.root);
 console.log(heightOfBinaryTree(tree.root));
+
+module.exports ={
+    node:node,
+    Tree:Tree
+}
 
 
 
